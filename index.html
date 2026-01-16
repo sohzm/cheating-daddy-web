@@ -1,639 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>cheating daddy - if you are gonna cheat, cheat better</title>
+        <title>Cheating Daddy</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <meta name="description" content="a free and opensource app that lets you gain an unfair advantage" />
+        <meta name="description" content="The leading open source interview assistant" />
         <meta name="author" content="soham.sh" />
-        <meta name="keywords" content="cheating, daddy, app, free, opensource, unfair advantage" />
-        <meta property="og:title" content="cheating daddy" />
+        <meta property="og:title" content="Cheating Daddy" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://cheatingdaddy.com" />
         <meta property="og:image" content="https://cheatingdaddy.com/assets/bg.png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="cheating daddy logo" />
-        <meta property="og:description" content="a free and opensource app that lets you gain an unfair advantage" />
-        <meta property="og:site_name" content="cheating daddy" />
-        <meta property="og:locale" content="en_US" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="cheating daddy" />
-        <meta name="twitter:description" content="a free and opensource app that lets you gain an unfair advantage" />
-        <meta name="twitter:image" content="https://cheatingdaddy.com/assets/bg.png" />
-        <meta name="twitter:site" content="@cheating_daddy" />
+        <meta property="og:description" content="The leading open source interview assistant" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="/style.css" />
     </head>
     <body>
-        <!-- Navigation -->
-        <nav class="navbar" id="navbar">
-            <div class="nav-container">
-                <img src="/assets/new-logo.jpg" alt="cheating daddy" class="logo" />
-                <div class="nav-links">
-                    <a href="/help">Help</a>
-                    <!-- <a href="/tutorial">Tutorial</a> -->
-                    <a href="/download" class="download-nav-btn">Downloads</a>
-                </div>
+        <nav>
+            <a href="/" class="nav-brand">Cheating Daddy</a>
+            <div class="nav-links">
+                <a href="/help">Help</a>
+                <a href="https://github.com/sohzm/cheating-daddy" target="_blank">GitHub</a>
+                <a href="/download" class="nav-cta">Download</a>
             </div>
         </nav>
 
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <div class="hero-badge">Free & Open Source</div>
-                <h1 class="hero-title">If you're gonna cheat, cheat better</h1>
-                <p class="hero-subtitle">Listens to questions, sees your screen, and feeds everything to Google Gemini for instant answers</p>
-                <div class="cta-buttons">
-                    <a href="#" class="download-btn" id="downloadBtn">
-                        <span>↓</span>
-                        <span id="downloadText">Download for Windows</span>
+        <main>
+            <!-- Hero -->
+            <section class="hero">
+                <p class="eyebrow">Open source interview assistant</p>
+                <h1>If you're gonna cheat,<br>cheat better.</h1>
+                <p class="hero-desc">Listens to questions. Sees your screen. Feeds everything to AI. Completely invisible during screen share.</p>
+                <div class="hero-actions">
+                    <a href="#" id="downloadBtn" class="btn-primary">
+                        <span id="downloadText">Download for macOS</span>
                     </a>
-                    <a href="https://github.com/sohzm/cheating-daddy" target="_blank" class="github-btn">
-                        <span>Star us on GitHub</span>
-                    </a>
+                    <a href="https://github.com/sohzm/cheating-daddy" target="_blank" class="btn-secondary">View on GitHub</a>
                 </div>
-                <a href="/download" class="download-link">View all downloads</a>
-            </div>
+            </section>
 
-            <!-- App Screenshot -->
-            <div class="app-preview">
-                <img src="/assets/app.svg" alt="Cheating Daddy App Screenshot" />
-            </div>
-        </section>
+            <!-- Product Screenshot -->
+            <section class="product">
+                <img src="/assets/app.svg" alt="Cheating Daddy" />
+            </section>
 
-        <!-- Social Proof Section -->
-        <section class="social-proof">
-            <div class="social-proof-container">
-                <h2 class="social-proof-title">THE LEADING OPEN SOURCE<br>INTERVIEW ASSISTANT</h2>
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <span class="stat-number">5K+</span>
-                        <span class="stat-label">GitHub Stars</span>
+            <!-- Social Proof -->
+            <section class="proof">
+                <div class="proof-stats">
+                    <div class="proof-stat">
+                        <span class="proof-number">5K+</span>
+                        <span class="proof-label">GitHub stars</span>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">60K+</span>
-                        <span class="stat-label">Downloads</span>
+                    <div class="proof-stat">
+                        <span class="proof-number">60K+</span>
+                        <span class="proof-label">Downloads</span>
                     </div>
                 </div>
-                <div class="placed-at">
-                    <p class="placed-label">Users already placed at</p>
+                <div class="proof-companies">
+                    <p>Users placed at</p>
                     <div class="company-logos">
-                        <img src="/assets/Amazon_logo.svg" alt="Amazon" class="company-logo amazon-logo" />
-                        <img src="/assets/hashedin-logo.svg" alt="HashedIn" class="company-logo hashedin-logo" />
+                        <img src="/assets/Amazon_logo.svg" alt="Amazon" />
+                        <img src="/assets/hashedin-logo.svg" alt="HashedIn" />
                     </div>
-                    <p class="company-more">and a lot more but I never asked
-                        <svg class="tear-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 21c-4.4 0-8-3.6-8-8 0-5 8-11 8-11s8 6 8 11c0 4.4-3.6 8-8 8z"/>
-                        </svg>
-                    </p>
+                    <p class="and-more">and more</p>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Stealth Features Table -->
-        <section class="stealth-section">
-            <h2 class="stealth-title">COMPLETELY UNDETECTABLE</h2>
-            <p class="stealth-subtitle">Built from the ground up to be invisible</p>
-            <div class="stealth-table-container">
-                <table class="stealth-table">
-                    <tbody>
-                        <tr>
-                            <td class="feature-name">
-                                <svg class="table-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M12 2a3 3 0 0 0-3 3v4a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/>
-                                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
-                                    <line x1="12" y1="19" x2="12" y2="22"/>
-                                </svg>
-                                Real-time Audio Processing
-                            </td>
-                            <td class="check-cell">
-                                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                                    <polyline points="20 6 9 17 4 12"/>
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="feature-name">
-                                <svg class="table-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                                    <line x1="8" y1="21" x2="16" y2="21"/>
-                                    <line x1="12" y1="17" x2="12" y2="21"/>
-                                </svg>
-                                Hidden from Dock
-                            </td>
-                            <td class="check-cell">
-                                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                                    <polyline points="20 6 9 17 4 12"/>
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="feature-name">
-                                <svg class="table-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/>
-                                    <line x1="1" y1="1" x2="23" y2="23"/>
-                                </svg>
-                                Invisible to Screen Share
-                            </td>
-                            <td class="check-cell">
-                                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                                    <polyline points="20 6 9 17 4 12"/>
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="feature-name">
-                                <svg class="table-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                                    <line x1="3" y1="9" x2="21" y2="9"/>
-                                    <line x1="9" y1="21" x2="9" y2="9"/>
-                                </svg>
-                                Hidden from System Tray
-                            </td>
-                            <td class="check-cell">
-                                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                                    <polyline points="20 6 9 17 4 12"/>
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="feature-name">
-                                <svg class="table-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="4" y="4" width="16" height="16" rx="2" ry="2"/>
-                                    <rect x="9" y="9" width="6" height="6"/>
-                                    <line x1="9" y1="1" x2="9" y2="4"/>
-                                    <line x1="15" y1="1" x2="15" y2="4"/>
-                                    <line x1="9" y1="20" x2="9" y2="23"/>
-                                    <line x1="15" y1="20" x2="15" y2="23"/>
-                                    <line x1="20" y1="9" x2="23" y2="9"/>
-                                    <line x1="20" y1="14" x2="23" y2="14"/>
-                                    <line x1="1" y1="9" x2="4" y2="9"/>
-                                    <line x1="1" y1="14" x2="4" y2="14"/>
-                                </svg>
-                                Bypasses Activity Monitor
-                            </td>
-                            <td class="check-cell">
-                                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                                    <polyline points="20 6 9 17 4 12"/>
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="feature-name">
-                                <svg class="table-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <line x1="2" y1="12" x2="22" y2="12"/>
-                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-                                </svg>
-                                Undetectable by Browser
-                            </td>
-                            <td class="check-cell">
-                                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                                    <polyline points="20 6 9 17 4 12"/>
-                                </svg>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+            <!-- Stealth -->
+            <section class="section">
+                <h2>Undetectable</h2>
+                <p class="section-desc">Built from the ground up to be invisible. No trace.</p>
+                <ul class="check-list">
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                        Real-time audio processing
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                        Hidden from dock and system tray
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                        Invisible to screen share
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                        Bypasses activity monitor
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                        Undetectable by browser proctoring
+                    </li>
+                </ul>
+            </section>
 
-        <!-- Features Section -->
-        <section class="features">
-            <h2 class="features-title">POWERFUL FEATURES</h2>
-            <div class="bento-grid">
-                <div class="bento-item">
-                    <canvas class="bento-canvas" id="canvas1"></canvas>
-                    <div class="content">
-                        <span class="feature-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-                                <circle cx="12" cy="12" r="3"/>
+            <!-- Features -->
+            <section class="section">
+                <h2>Features</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                <path d="M8 21h8"/>
+                                <path d="M12 17v4"/>
+                                <circle cx="12" cy="10" r="2"/>
                             </svg>
-                        </span>
-                        <h3>Screen Vision</h3>
-                        <p>
-                            Captures screenshots and sends them to Google Gemini. Perfect for reading interview questions, coding problems, or any
-                            visual content.
-                        </p>
+                        </div>
+                        <h3>Screen capture</h3>
+                        <p>Captures your screen and sends it to Google Gemini. Reads interview questions, coding problems, anything visual.</p>
                     </div>
-                </div>
-
-                <div class="bento-item">
-                    <canvas class="bento-canvas" id="canvas2"></canvas>
-                    <div class="content">
-                        <span class="feature-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 2a3 3 0 0 0-3 3v4a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/>
-                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
-                                <line x1="12" y1="19" x2="12" y2="22"/>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/>
+                                <path d="M19 10v1a7 7 0 0 1-14 0v-1"/>
+                                <path d="M12 18v4"/>
+                                <path d="M8 22h8"/>
                             </svg>
-                        </span>
-                        <h3>Audio Capture</h3>
-                        <p>Listens to system audio and converts speech to text for AI processing.</p>
+                        </div>
+                        <h3>Audio capture</h3>
+                        <p>Listens to system audio in real-time. Converts speech to text and feeds it to AI instantly.</p>
                     </div>
-                </div>
-
-                <div class="bento-item">
-                    <canvas class="bento-canvas" id="canvas3"></canvas>
-                    <div class="content">
-                        <span class="feature-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9H3m9 9a9 9 0 0 1-9-9m9 9c-2.5-2.5-4-5.5-4-9s1.5-6.5 4-9m0 18c2.5-2.5 4-5.5 4-9s-1.5-6.5-4-9m-9 9a9 9 0 0 1 9-9"/>
                             </svg>
-                        </span>
-                        <h3>AI Responses</h3>
-                        <p>Generates intelligent answers automatically using Google Gemini API.</p>
+                        </div>
+                        <h3>AI responses</h3>
+                        <p>Generates answers automatically using Google Gemini. No manual input needed.</p>
                     </div>
-                </div>
-
-                <div class="bento-item">
-                    <canvas class="bento-canvas" id="canvas4"></canvas>
-                    <div class="content">
-                        <span class="feature-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-                                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
                             </svg>
-                        </span>
-                        <h3>Stealth Mode</h3>
-                        <p>Invisible during screen sharing and recording. Stays hidden as a system overlay that screen capture software ignores.</p>
+                        </div>
+                        <h3>Multiple profiles</h3>
+                        <p>Switch between interview, sales call, negotiation, or study mode. Each optimizes responses differently.</p>
                     </div>
-                </div>
-
-                <div class="bento-item">
-                    <canvas class="bento-canvas" id="canvas5"></canvas>
-                    <div class="content">
-                        <span class="feature-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                                <circle cx="12" cy="7" r="4"/>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <path d="M14 2v6h6"/>
+                                <path d="M16 13H8"/>
+                                <path d="M16 17H8"/>
+                                <path d="M10 9H8"/>
                             </svg>
-                        </span>
-                        <h3>Multiple Profiles</h3>
-                        <p>
-                            Switch between different modes like job interview, sales call, negotiation, or study session. Each profile optimizes AI
-                            responses for specific scenarios.
-                        </p>
+                        </div>
+                        <h3>Custom context</h3>
+                        <p>Add your resume, company info, or notes. Get personalized answers tailored to your situation.</p>
                     </div>
-                </div>
-
-                <div class="bento-item">
-                    <canvas class="bento-canvas" id="canvas6"></canvas>
-                    <div class="content">
-                        <span class="feature-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 19l7-7 3 3-7 7-3-3z"/>
-                                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
-                                <path d="M2 2l7.586 7.586"/>
-                                <circle cx="11" cy="11" r="2"/>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                <path d="M6 8h.01"/>
+                                <path d="M10 8h.01"/>
+                                <path d="M14 8h.01"/>
+                                <path d="M18 8h.01"/>
+                                <path d="M6 12h.01"/>
+                                <path d="M18 12h.01"/>
+                                <path d="M8 16h8"/>
                             </svg>
-                        </span>
-                        <h3>Customizable Prompts</h3>
-                        <p>
-                            Provide context like your resume, company info, or personal details to get more personalized and relevant AI responses
-                            tailored to your situation.
-                        </p>
+                        </div>
+                        <h3>Keyboard shortcuts</h3>
+                        <p>Control everything with hotkeys. Trigger captures and responses without touching the mouse.</p>
                     </div>
                 </div>
+            </section>
 
-                <div class="bento-item">
-                    <canvas class="bento-canvas" id="canvas7"></canvas>
-                    <div class="content">
-                        <span class="feature-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="2" y="4" width="20" height="16" rx="2" ry="2"/>
-                                <path d="M6 8h.001"/>
-                                <path d="M10 8h.001"/>
-                                <path d="M14 8h.001"/>
-                                <path d="M18 8h.001"/>
-                                <path d="M8 12h.001"/>
-                                <path d="M12 12h.001"/>
-                                <path d="M16 12h.001"/>
-                                <path d="M7 16h10"/>
-                            </svg>
-                        </span>
-                        <h3>Keyboard Shortcuts</h3>
-                        <p>
-                            Control everything with customizable hotkeys. Trigger captures, switch modes, or generate responses without touching the
-                            mouse.
-                        </p>
+            <!-- FAQ -->
+            <section class="section">
+                <h2>FAQ</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>Is it free?</h3>
+                        <p>Yes. 100% free and open source. No premium tier, no hidden fees.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Is it automatic?</h3>
+                        <p>Yes. Generates responses from screen and audio automatically. Use Ctrl+Enter for manual input.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Is it really invisible?</h3>
+                        <p>Yes. Doesn't appear in screen recordings, screen shares, or any capture software.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What platforms?</h3>
+                        <p>Windows and macOS. Linux coming soon.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How does it work?</h3>
+                        <p>Captures your screen and audio, sends to Google Gemini API, returns answers. Requires your own API key.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Is the API key free?</h3>
+                        <p>Google offers a free tier for Gemini API. That's enough for most interviews.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can I customize responses?</h3>
+                        <p>Yes. Add your resume, job description, company info, or any context to personalize answers.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How do I get support?</h3>
+                        <p>Join our Discord community or open an issue on GitHub. We respond fast.</p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- FAQ Section -->
-        <section class="faq">
-            <h2 class="faq-title">FAQ</h2>
-
-            <div class="faq-item">
-                <h3 class="faq-question">
-                    Does it work automatically?
-                    <span class="faq-icon">+</span>
-                </h3>
-                <p class="faq-answer">Yes! Auto-generates responses from screen and audio. Use Ctrl+Enter for manual input.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3 class="faq-question">
-                    Is this app really free?
-                    <span class="faq-icon">+</span>
-                </h3>
-                <p class="faq-answer">100% free and open source. No cost, no catch.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3 class="faq-question">
-                    How does screen capture work?
-                    <span class="faq-icon">+</span>
-                </h3>
-                <p class="faq-answer">Takes screenshots and audio, sends to Google Gemini API. Requires internet and API key.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3 class="faq-question">
-                    Is it invisible during sharing?
-                    <span class="faq-icon">+</span>
-                </h3>
-                <p class="faq-answer">Yes! Doesn't show up in screen recordings or shares. Invisible overlay.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3 class="faq-question">
-                    What platforms are supported?
-                    <span class="faq-icon">+</span>
-                </h3>
-                <p class="faq-answer">Windows and macOS. Linux coming soon.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3 class="faq-question">
-                    Can I customize AI responses?
-                    <span class="faq-icon">+</span>
-                </h3>
-                <p class="faq-answer">Yes! Add context to personalize responses for your needs.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3 class="faq-question">
-                    How do I get support?
-                    <span class="faq-icon">+</span>
-                </h3>
-                <p class="faq-answer">Join our Discord or report issues on GitHub.</p>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-container">
-                <a href="https://github.com/sohzm/cheating-daddy" target="_blank" class="github-star">
-                    <img src="/assets/social/github.svg" alt="GitHub" />
-                    <span>Star us on GitHub</span>
+            <!-- CTA -->
+            <section class="cta">
+                <h2>Ready to start?</h2>
+                <p>Join 60,000+ users.</p>
+                <a href="#" id="downloadBtn2" class="btn-primary">
+                    <span id="downloadText2">Download for macOS</span>
                 </a>
+            </section>
+        </main>
 
-                <div class="social-links">
-                    <a href="https://discord.gg/GCBdubnXfJ" target="_blank">
-                        <img src="/assets/social/discord.svg" alt="Discord" />
-                    </a>
-                    <a href="https://instagram.com/cheating_daddy" target="_blank">
-                        <img src="/assets/social/insta.svg" alt="Instagram" />
-                    </a>
-                    <a href="https://x.com/cheating_daddy" target="_blank">
-                        <img src="/assets/social/twitter.svg" alt="Twitter" />
-                    </a>
-                    <a href="https://www.tiktok.com/@cheating_daddy" target="_blank">
-                        <img src="/assets/social/tiktok.svg" alt="TikTok" />
-                    </a>
-                </div>
-
-                <p class="footer-text">Made by <a href="https://soham.sh/" target="_blank">soham</a></p>
+        <footer>
+            <div class="footer-links">
+                <a href="https://github.com/sohzm/cheating-daddy" target="_blank">GitHub</a>
+                <a href="https://discord.gg/GCBdubnXfJ" target="_blank">Discord</a>
+                <a href="https://x.com/cheating_daddy" target="_blank">X</a>
+                <a href="https://instagram.com/cheating_daddy" target="_blank">Instagram</a>
+                <a href="https://www.tiktok.com/@cheating_daddy" target="_blank">TikTok</a>
             </div>
+            <p>Made by <a href="https://soham.sh/" target="_blank">Soham</a></p>
         </footer>
 
         <script>
-            // Canvas Animations - Subtle Apple-like
-            class CanvasAnimation {
-                constructor(canvasId, type) {
-                    this.canvas = document.getElementById(canvasId);
-                    this.ctx = this.canvas.getContext('2d');
-                    this.type = type;
-                    this.particles = [];
-                    this.animationId = null;
-
-                    this.resizeCanvas();
-                    this.init();
-                    this.animate();
-
-                    window.addEventListener('resize', () => this.resizeCanvas());
-                }
-
-                resizeCanvas() {
-                    const rect = this.canvas.getBoundingClientRect();
-                    this.canvas.width = rect.width;
-                    this.canvas.height = rect.height;
-                }
-
-                init() {
-                    this.particles = [];
-                    const particleCount = 8;
-
-                    for (let i = 0; i < particleCount; i++) {
-                        this.particles.push({
-                            x: Math.random() * this.canvas.width,
-                            y: Math.random() * this.canvas.height,
-                            vx: (Math.random() - 0.5) * 0.3,
-                            vy: (Math.random() - 0.5) * 0.3,
-                            size: Math.random() * 3 + 2,
-                            opacity: Math.random() * 0.3 + 0.1,
-                            hue: Math.random() * 60 + 200,
-                        });
-                    }
-                }
-
-                animate() {
-                    this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-
-                    switch (this.type) {
-                        case 'floating':
-                            this.drawFloating();
-                            break;
-                        case 'wave':
-                            this.drawWave();
-                            break;
-                        case 'pulse':
-                            this.drawPulse();
-                            break;
-                        case 'flow':
-                            this.drawFlow();
-                            break;
-                    }
-
-                    this.animationId = requestAnimationFrame(() => this.animate());
-                }
-
-                drawFloating() {
-                    const time = Date.now() * 0.001;
-
-                    this.particles.forEach(particle => {
-                        const gradient = this.ctx.createRadialGradient(particle.x, particle.y, 0, particle.x, particle.y, particle.size * 2);
-                        gradient.addColorStop(0, `hsla(${particle.hue}, 70%, 70%, ${particle.opacity})`);
-                        gradient.addColorStop(1, `hsla(${particle.hue}, 70%, 70%, 0)`);
-
-                        this.ctx.fillStyle = gradient;
-                        this.ctx.beginPath();
-                        this.ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-                        this.ctx.fill();
-
-                        particle.x += Math.sin(time + particle.x * 0.01) * 0.2;
-                        particle.y += Math.cos(time + particle.y * 0.01) * 0.2;
-
-                        if (particle.x < 0) particle.x = this.canvas.width;
-                        if (particle.x > this.canvas.width) particle.x = 0;
-                        if (particle.y < 0) particle.y = this.canvas.height;
-                        if (particle.y > this.canvas.height) particle.y = 0;
-                    });
-                }
-
-                drawWave() {
-                    const time = Date.now() * 0.001;
-                    const gradient = this.ctx.createLinearGradient(0, 0, this.canvas.width, this.canvas.height);
-                    gradient.addColorStop(0, 'rgba(30, 58, 138, 0.1)');
-                    gradient.addColorStop(1, 'rgba(0, 0, 0, 0.1)');
-
-                    this.ctx.strokeStyle = gradient;
-                    this.ctx.lineWidth = 2;
-                    this.ctx.beginPath();
-
-                    for (let x = 0; x < this.canvas.width; x += 5) {
-                        const y = this.canvas.height / 2 + Math.sin(x * 0.01 + time) * 20;
-                        if (x === 0) {
-                            this.ctx.moveTo(x, y);
-                        } else {
-                            this.ctx.lineTo(x, y);
-                        }
-                    }
-                    this.ctx.stroke();
-                }
-
-                drawPulse() {
-                    const time = Date.now() * 0.001;
-                    const centerX = this.canvas.width / 2;
-                    const centerY = this.canvas.height / 2;
-
-                    for (let i = 0; i < 3; i++) {
-                        const radius = 20 + Math.sin(time + i * 0.5) * 15;
-                        const opacity = 0.1 - i * 0.03;
-
-                        const gradient = this.ctx.createRadialGradient(centerX, centerY, 0, centerX, centerY, radius);
-                        gradient.addColorStop(0, `rgba(30, 58, 138, ${opacity})`);
-                        gradient.addColorStop(1, 'rgba(30, 58, 138, 0)');
-
-                        this.ctx.fillStyle = gradient;
-                        this.ctx.beginPath();
-                        this.ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
-                        this.ctx.fill();
-                    }
-                }
-
-                drawFlow() {
-                    const time = Date.now() * 0.001;
-
-                    this.ctx.strokeStyle = 'rgba(30, 58, 138, 0.1)';
-                    this.ctx.lineWidth = 1;
-
-                    for (let i = 0; i < 5; i++) {
-                        this.ctx.beginPath();
-                        const startX = ((time * 30 + i * 40) % (this.canvas.width + 40)) - 40;
-                        const startY = this.canvas.height / 2 + Math.sin(time + i) * 30;
-
-                        this.ctx.moveTo(startX, startY);
-                        this.ctx.quadraticCurveTo(startX + 20, startY - 10, startX + 40, startY);
-                        this.ctx.stroke();
-                    }
-                }
-
-                destroy() {
-                    if (this.animationId) {
-                        cancelAnimationFrame(this.animationId);
-                    }
-                }
-            }
-
-            // OS Detection and Download Button
             function detectOS() {
-                const userAgent = navigator.userAgent;
-                const downloadBtn = document.getElementById('downloadBtn');
-                const downloadText = document.getElementById('downloadText');
-
-                if (userAgent.indexOf('Mac') !== -1) {
-                    downloadText.textContent = 'Download for macOS';
-                    downloadBtn.href = 'https://github.com/sohzm/cheating-daddy/releases/download/0.5.0/Cheating.Daddy-0.5.0-arm64.dmg';
-                } else {
-                    downloadText.textContent = 'Download for Windows';
-                    downloadBtn.href = 'https://github.com/sohzm/cheating-daddy/releases/download/0.5.0/Cheating.Daddy-0.5.0.Setup.exe';
-                }
-            }
-
-            // Navbar scroll effect
-            function handleNavbarScroll() {
-                const navbar = document.getElementById('navbar');
-                const scrolled = window.scrollY > 50;
-
-                if (scrolled) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
-                }
-            }
-
-            // FAQ Toggle
-            function initFAQ() {
-                const faqItems = document.querySelectorAll('.faq-item');
-
-                faqItems.forEach(item => {
-                    const question = item.querySelector('.faq-question');
-
-                    question.addEventListener('click', () => {
-                        const isActive = item.classList.contains('active');
-
-                        // Close all other items
-                        faqItems.forEach(otherItem => {
-                            otherItem.classList.remove('active');
-                        });
-
-                        // Toggle current item
-                        if (!isActive) {
-                            item.classList.add('active');
-                        }
-                    });
+                const isMac = navigator.userAgent.indexOf('Mac') !== -1;
+                document.querySelectorAll('[id^="downloadBtn"]').forEach(btn => {
+                    const text = btn.querySelector('span');
+                    if (isMac) {
+                        text.textContent = 'Download for macOS';
+                        btn.href = 'https://github.com/sohzm/cheating-daddy/releases/download/0.5.0/Cheating.Daddy-0.5.0-arm64.dmg';
+                    } else {
+                        text.textContent = 'Download for Windows';
+                        btn.href = 'https://github.com/sohzm/cheating-daddy/releases/download/0.5.0/Cheating.Daddy-0.5.0.Setup.exe';
+                    }
                 });
             }
-
-            // Initialize everything
-            document.addEventListener('DOMContentLoaded', function () {
-                detectOS();
-                window.addEventListener('scroll', handleNavbarScroll);
-                initFAQ();
-
-                // Initialize canvas animations
-                new CanvasAnimation('canvas1', 'floating');
-                new CanvasAnimation('canvas2', 'wave');
-                new CanvasAnimation('canvas3', 'pulse');
-                new CanvasAnimation('canvas4', 'flow');
-                new CanvasAnimation('canvas5', 'floating');
-                new CanvasAnimation('canvas6', 'wave');
-                new CanvasAnimation('canvas7', 'pulse');
-            });
+            document.addEventListener('DOMContentLoaded', detectOS);
         </script>
     </body>
 </html>
