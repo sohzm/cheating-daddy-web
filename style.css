@@ -239,9 +239,64 @@ main {
     font-style: italic;
 }
 
+/* ==================== DIVIDERS ==================== */
+.divider {
+    border: none;
+    height: 1px;
+    background: var(--border);
+    margin: 0;
+}
+
+.divider--thick {
+    height: 2px;
+    background: var(--text);
+    max-width: 120px;
+}
+
+.divider--accent {
+    height: 1px;
+    background: linear-gradient(90deg, var(--text) 0%, var(--text) 40px, transparent 40px);
+}
+
+/* Vertical accent for section headers */
+.section-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.section-header::before {
+    content: '';
+    width: 2px;
+    height: 48px;
+    background: var(--text);
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+.section-header-content h2 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+}
+
+.section-header-content p {
+    font-size: 17px;
+    color: var(--text-secondary);
+}
+
 /* ==================== SECTIONS ==================== */
 .section {
     padding: 100px 0;
+}
+
+.section > h2 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
 }
 
 .section h2 {
@@ -470,6 +525,18 @@ footer > p a {
     }
 
     .cta h2 {
+        font-size: 24px;
+    }
+
+    .section-header {
+        gap: 16px;
+    }
+
+    .section-header::before {
+        height: 36px;
+    }
+
+    .section-header-content h2 {
         font-size: 24px;
     }
 
