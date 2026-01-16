@@ -149,17 +149,18 @@ body {
 }
 
 .hero-title {
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    font-weight: 700;
-    line-height: 1.08;
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    font-weight: 900;
+    line-height: 1.0;
     margin-bottom: 74px;
     color: black;
-    letter-spacing: -0.02em;
-    background: linear-gradient(135deg, black, #424245);
+    letter-spacing: -0.04em;
+    background: linear-gradient(135deg, black, #1a1a1a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-family: 'DM Sans', sans-serif;
+    text-transform: uppercase;
 }
 
 .hero-subtitle {
@@ -251,6 +252,187 @@ body {
     max-width: 600px;
 }
 
+/* Social Proof Section */
+.social-proof {
+    padding: 100px 60px;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+.social-proof-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.social-proof-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 60px;
+    font-family: 'DM Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 60px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-number {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 16px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.placed-at {
+    border-top: 1px solid #333;
+    padding-top: 40px;
+}
+
+.placed-label {
+    font-size: 14px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+.company-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 48px;
+    margin-bottom: 24px;
+}
+
+.company-logo {
+    height: 40px;
+    width: auto;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+}
+
+.amazon-logo {
+    height: 36px;
+}
+
+.hashedin-logo {
+    height: 32px;
+}
+
+.company-more {
+    font-size: 16px;
+    color: #666;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.tear-icon {
+    width: 18px;
+    height: 18px;
+    color: #666;
+}
+
+/* Stealth Features Table */
+.stealth-section {
+    padding: 120px 60px;
+    text-align: center;
+    background: #fafafa;
+}
+
+.stealth-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    margin-bottom: 16px;
+    font-family: 'DM Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.stealth-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 60px;
+    font-weight: 400;
+}
+
+.stealth-table-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.stealth-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.stealth-table tr {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.stealth-table tr:last-child {
+    border-bottom: none;
+}
+
+.stealth-table td {
+    padding: 24px 16px;
+    text-align: left;
+}
+
+.feature-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.table-icon {
+    width: 24px;
+    height: 24px;
+    color: #666;
+    flex-shrink: 0;
+}
+
+.check-cell {
+    text-align: right;
+    width: 60px;
+}
+
+.check-icon {
+    width: 28px;
+    height: 28px;
+    color: #22c55e;
+}
+
 /* Features Section */
 .features {
     padding: 120px 60px;
@@ -326,12 +508,13 @@ body {
 }
 
 .bento-item h3 {
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 26px;
+    font-weight: 800;
     margin-bottom: 16px;
     color: black;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.02em;
     font-family: 'DM Sans', sans-serif;
+    text-transform: uppercase;
 }
 
 .bento-item p {
@@ -358,10 +541,27 @@ body {
 }
 
 .feature-icon {
-    font-size: 48px;
+    width: 48px;
+    height: 48px;
     margin-bottom: 24px;
     display: block;
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+    color: #1e3a8a;
+}
+
+.feature-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.features-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 80px;
+    color: black;
+    letter-spacing: -0.03em;
+    font-family: 'DM Sans', sans-serif;
+    text-transform: uppercase;
 }
 
 /* FAQ Section */
@@ -372,13 +572,14 @@ body {
 }
 
 .faq-title {
-    font-size: clamp(2.5rem, 4vw, 3.5rem);
-    font-weight: 700;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 900;
     text-align: center;
     margin-bottom: 80px;
     color: black;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.03em;
     font-family: 'DM Sans', sans-serif;
+    text-transform: uppercase;
 }
 
 .faq-item {
@@ -536,6 +737,18 @@ body {
         max-width: none;
     }
 
+    .social-proof {
+        padding: 80px 40px;
+    }
+
+    .stats-grid {
+        gap: 40px;
+    }
+
+    .stealth-section {
+        padding: 80px 40px;
+    }
+
     .features {
         padding: 80px 40px;
     }
@@ -657,5 +870,61 @@ body {
         height: 300px;
         width: auto;
         max-width: none;
+    }
+
+    /* Social Proof Mobile */
+    .social-proof {
+        padding: 60px 20px;
+    }
+
+    .social-proof-title {
+        font-size: 2rem;
+    }
+
+    .stats-grid {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .stat-number {
+        font-size: 4rem;
+    }
+
+    .company-logos {
+        gap: 32px;
+    }
+
+    .company-logo {
+        height: 32px;
+    }
+
+    .amazon-logo {
+        height: 28px;
+    }
+
+    .hashedin-logo {
+        height: 24px;
+    }
+
+    /* Stealth Section Mobile */
+    .stealth-section {
+        padding: 60px 20px;
+    }
+
+    .stealth-title {
+        font-size: 2rem;
+    }
+
+    .feature-name {
+        font-size: 15px;
+    }
+
+    .table-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .stealth-table td {
+        padding: 18px 8px;
     }
 }
