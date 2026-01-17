@@ -1,94 +1,89 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>cheating daddy - clear storage guide</title>
+        <title>Clear Storage - Cheating Daddy</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <meta name="description" content="how to clear storage and reset cheating daddy app data" />
+        <meta name="description" content="Clear storage and reset Cheating Daddy app data" />
         <meta name="author" content="soham.sh" />
-        <meta name="keywords" content="cheating, daddy, app, clear, storage, reset, data, cache, windows, macos, tutorial" />
-        <meta property="og:title" content="cheating daddy - clear storage guide" />
+        <meta property="og:title" content="Clear Storage - Cheating Daddy" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://cheatingdaddy.com/help/clear-storage" />
         <meta property="og:image" content="https://cheatingdaddy.com/assets/bg.png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="cheating daddy logo" />
-        <meta property="og:description" content="step-by-step guide to clear storage and reset app data" />
-        <meta property="og:site_name" content="cheating daddy" />
-        <meta property="og:locale" content="en_US" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="cheating daddy - clear storage guide" />
-        <meta name="twitter:description" content="step-by-step guide to clear storage and reset app data" />
-        <meta name="twitter:image" content="https://cheatingdaddy.com/assets/bg.png" />
-        <meta name="twitter:site" content="@cheating_daddy" />
+        <meta property="og:description" content="How to clear storage and reset app data" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="/common.css" />
 
         <style>
-            .step-counter {
-                background: #000;
-                color: #fff;
-                width: 32px;
-                height: 32px;
-                border-radius: 50%;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 14px;
-                font-weight: 600;
-                margin-right: 12px;
-                flex-shrink: 0;
+            .step {
+                padding: 24px 0;
+                border-bottom: 1px solid var(--border);
+            }
+
+            .step:last-child {
+                border-bottom: none;
             }
 
             .step-header {
                 display: flex;
                 align-items: center;
-                margin-bottom: 16px;
+                gap: 12px;
+                margin-bottom: 12px;
+            }
+
+            .step-number {
+                width: 28px;
+                height: 28px;
+                background: var(--text);
+                color: var(--bg);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+                font-weight: 600;
+                flex-shrink: 0;
             }
 
             .step-title {
-                font-size: 18px;
+                font-size: 16px;
                 font-weight: 600;
-                color: #000;
                 margin: 0;
             }
 
-            .code-block {
-                background: #f5f5f5;
-                border: 1px solid #e5e5e5;
-                border-radius: 6px;
-                padding: 16px;
-                font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
-                font-size: 14px;
-                color: #333;
-                margin: 16px 0;
-                word-break: break-all;
-                overflow-x: auto;
+            .step-content {
+                font-size: 15px;
+                color: var(--text-secondary);
+                line-height: 1.6;
+                margin-left: 40px;
+            }
+
+            .platform-tabs {
+                display: flex;
+                gap: 8px;
+                margin-bottom: 16px;
             }
 
             .platform-tab {
-                display: inline-block;
                 padding: 8px 16px;
-                margin: 0 4px 16px 0;
                 background: #f5f5f5;
-                border: 1px solid #e5e5e5;
+                border: 1px solid var(--border);
                 border-radius: 6px;
                 cursor: pointer;
-                transition: all 0.2s ease;
-                font-weight: 500;
                 font-size: 14px;
+                font-weight: 500;
+                transition: all 0.2s;
             }
 
             .platform-tab.active {
-                background: #000;
-                color: #fff;
-                border-color: #000;
+                background: var(--text);
+                color: var(--bg);
+                border-color: var(--text);
             }
 
             .platform-content {
@@ -99,133 +94,125 @@
                 display: block;
             }
 
-            .warning-box {
-                background: #fff3cd;
-                border: 1px solid #ffeaa7;
+            .code-path {
+                background: #f5f5f5;
+                padding: 12px 16px;
                 border-radius: 6px;
-                padding: 16px;
-                margin: 16px 0;
-                font-size: 14px;
-                color: #856404;
+                font-family: 'SF Mono', Monaco, monospace;
+                font-size: 13px;
+                margin: 8px 0;
+                word-break: break-all;
             }
 
-            .warning-box strong {
-                color: #856404;
+            .warning {
+                background: #fffbeb;
+                border-left: 3px solid #f59e0b;
+                padding: 16px;
+                margin-bottom: 24px;
+                font-size: 14px;
+                color: #92400e;
+            }
+
+            .reset-list {
+                margin-top: 12px;
+                margin-left: 16px;
+                color: var(--text-secondary);
+                font-size: 14px;
+            }
+
+            .reset-list li {
+                margin-bottom: 4px;
             }
         </style>
     </head>
     <body>
-        <!-- Navigation -->
-        <nav class="navbar" id="navbar">
+        <nav class="navbar">
             <div class="nav-container">
-                <img src="/assets/new/new-logo.svg" alt="cheating daddy" class="logo" />
+                <a href="/" class="nav-brand">Cheating Daddy</a>
                 <div class="nav-links">
-                    <a href="/">Home</a>
+                    <a href="/help" class="active">Help</a>
                     <a href="/download">Download</a>
-                    <a href="/help">Help</a>
-                    <a href="https://github.com/sohzm/cheating-daddy" target="_blank">Source</a>
+                    <a href="https://github.com/sohzm/cheating-daddy" target="_blank">GitHub</a>
                 </div>
             </div>
         </nav>
 
-        <!-- Main Content -->
         <div class="main-content">
             <div class="container">
                 <div class="page-header">
-                    <h1 class="page-title">Clear Storage Guide</h1>
-                    <p class="page-subtitle">
-                        Learn how to clear Cheating Daddy's storage and reset all app data.<br />This will remove settings, cache, and any stored
-                        information.
-                    </p>
+                    <div class="breadcrumb">
+                        <a href="/help">Help</a>
+                        <span>/</span>
+                        <span>Clear Storage</span>
+                    </div>
+                    <h1 class="page-title">Clear Storage</h1>
+                    <p class="page-subtitle">Reset all app data and settings.</p>
                 </div>
 
+                <hr class="divider" />
+
                 <div class="content-section">
-                    <div class="section-content">
-                        <div class="warning-box">
-                            <strong>⚠️ Warning:</strong> Clearing storage will remove all your app settings, saved configurations, and cached data.
-                            You'll need to reconfigure the app after doing this.
-                        </div>
+                    <div class="warning">
+                        This will remove all settings, saved configurations, and cached data. You'll need to reconfigure the app after.
+                    </div>
 
-                        <div class="card mb-24">
-                            <div class="step-header">
-                                <div class="step-counter">1</div>
-                                <h3 class="step-title">Close Cheating Daddy</h3>
-                            </div>
-                            <div class="card-content">
-                                Before clearing storage, make sure Cheating Daddy is completely closed. Exit the app from the system tray or force
-                                quit it if necessary.
-                            </div>
+                    <div class="step">
+                        <div class="step-header">
+                            <div class="step-number">1</div>
+                            <h3 class="step-title">Close Cheating Daddy</h3>
                         </div>
+                        <div class="step-content">
+                            Make sure the app is completely closed before proceeding.
+                        </div>
+                    </div>
 
-                        <div class="card mb-24">
-                            <div class="step-header">
-                                <div class="step-counter">2</div>
-                                <h3 class="step-title">Select Your Platform</h3>
-                            </div>
-                            <div class="card-content">
+                    <div class="step">
+                        <div class="step-header">
+                            <div class="step-number">2</div>
+                            <h3 class="step-title">Delete the storage folder</h3>
+                        </div>
+                        <div class="step-content">
+                            <div class="platform-tabs">
                                 <div class="platform-tab active" onclick="showPlatform('windows')">Windows</div>
                                 <div class="platform-tab" onclick="showPlatform('macos')">macOS</div>
+                            </div>
 
-                                <div id="windows-content" class="platform-content active">
-                                    <h4 style="margin-bottom: 12px; color: #000">For Windows Users:</h4>
-                                    <p>You need to delete the following folders:</p>
+                            <div id="windows-content" class="platform-content active">
+                                <p>Delete these folders:</p>
+                                <div class="code-path">C:\Users\&lt;YourUsername&gt;\AppData\Local\cheating-daddy</div>
+                                <div class="code-path">C:\Users\&lt;YourUsername&gt;\AppData\Roaming\cheating-daddy</div>
+                            </div>
 
-                                    <strong>Primary storage location:</strong>
-                                    <div class="code-block">C:\Users\&lt;YourUsername&gt;\AppData\Local\cheating-daddy</div>
-
-                                    <strong>Also check the Roaming folder:</strong>
-                                    <div class="code-block">C:\Users\&lt;YourUsername&gt;\AppData\Roaming\cheating-daddy</div>
-                                </div>
-
-                                <div id="macos-content" class="platform-content">
-                                    <h4 style="margin-bottom: 12px; color: #000">For macOS Users:</h4>
-                                    <p>Delete the following folder:</p>
-
-                                    <div class="code-block">~/Library/Application Support/cheating-daddy</div>
-                                </div>
+                            <div id="macos-content" class="platform-content">
+                                <p>Delete this folder:</p>
+                                <div class="code-path">~/Library/Application Support/cheating-daddy</div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="card mb-24">
-                            <div class="step-header">
-                                <div class="step-counter">3</div>
-                                <h3 class="step-title">Delete the Folder</h3>
-                            </div>
-                            <div class="card-content">
-                                Once you've located the "cheating-daddy" folder(s), right-click and delete them. You might need administrator
-                                permissions depending on your system configuration.
-                            </div>
+                    <div class="step">
+                        <div class="step-header">
+                            <div class="step-number">3</div>
+                            <h3 class="step-title">Restart the app</h3>
                         </div>
-
-                        <div class="card">
-                            <div class="step-header">
-                                <div class="step-counter">4</div>
-                                <h3 class="step-title">Restart the App</h3>
-                            </div>
-                            <div class="card-content">
-                                Launch Cheating Daddy again. The app will create fresh storage and you'll need to reconfigure your settings, including
-                                your API key and any custom preferences.
-
-                                <p style="margin-top: 16px; color: #000; font-weight: 500">What gets reset:</p>
-                                <ul style="margin-left: 20px; color: #666; margin-top: 8px">
-                                    <li>API key configuration</li>
-                                    <li>App settings and preferences</li>
-                                    <li>Window position and size</li>
-                                    <li>Any cached data or temporary files</li>
-                                </ul>
-                            </div>
+                        <div class="step-content">
+                            Launch Cheating Daddy again. You'll need to reconfigure:
+                            <ul class="reset-list">
+                                <li>API key</li>
+                                <li>App settings</li>
+                                <li>Window position</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Footer -->
         <footer class="footer">
             <div class="footer-container">
                 <a href="https://github.com/sohzm/cheating-daddy" target="_blank" class="github-star">
                     <img src="/assets/social/github.svg" alt="GitHub" />
-                    <span>Star us on GitHub</span>
+                    <span>Star on GitHub</span>
                 </a>
 
                 <div class="social-links">
@@ -243,42 +230,17 @@
                     </a>
                 </div>
 
-                <p class="footer-text">Made by <a href="https://soham.sh/" target="_blank">soham</a></p>
+                <p class="footer-text">Made by <a href="https://soham.sh/" target="_blank">Soham</a></p>
             </div>
         </footer>
 
         <script>
-            // Navbar scroll effect
-            function handleNavbarScroll() {
-                const navbar = document.getElementById('navbar');
-                const scrolled = window.scrollY > 50;
-
-                if (scrolled) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
-                }
-            }
-
-            // Platform switching
             function showPlatform(platform) {
-                // Remove active class from all tabs and content
-                document.querySelectorAll('.platform-tab').forEach(tab => {
-                    tab.classList.remove('active');
-                });
-                document.querySelectorAll('.platform-content').forEach(content => {
-                    content.classList.remove('active');
-                });
-
-                // Add active class to selected tab and content
+                document.querySelectorAll('.platform-tab').forEach(tab => tab.classList.remove('active'));
+                document.querySelectorAll('.platform-content').forEach(content => content.classList.remove('active'));
                 event.target.classList.add('active');
                 document.getElementById(platform + '-content').classList.add('active');
             }
-
-            // Initialize
-            document.addEventListener('DOMContentLoaded', function () {
-                window.addEventListener('scroll', handleNavbarScroll);
-            });
         </script>
     </body>
 </html>

@@ -1,192 +1,180 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>cheating daddy - api key guide</title>
+        <title>API Key Setup - Cheating Daddy</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <meta name="description" content="get your free google ai studio api key for cheating daddy" />
+        <meta name="description" content="Get your free Google AI Studio API key for Cheating Daddy" />
         <meta name="author" content="soham.sh" />
-        <meta name="keywords" content="cheating, daddy, app, api key, google ai studio, tutorial" />
-        <meta property="og:title" content="cheating daddy - api key guide" />
+        <meta property="og:title" content="API Key Setup - Cheating Daddy" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://cheatingdaddy.com/help/api-key" />
         <meta property="og:image" content="https://cheatingdaddy.com/assets/bg.png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="cheating daddy logo" />
-        <meta property="og:description" content="step-by-step guide to get your free google ai studio api key" />
-        <meta property="og:site_name" content="cheating daddy" />
-        <meta property="og:locale" content="en_US" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="cheating daddy - api key guide" />
-        <meta name="twitter:description" content="step-by-step guide to get your free google ai studio api key" />
-        <meta name="twitter:image" content="https://cheatingdaddy.com/assets/bg.png" />
-        <meta name="twitter:site" content="@cheating_daddy" />
+        <meta property="og:description" content="Step-by-step guide to get your free Google AI Studio API key" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="/common.css" />
 
         <style>
-            .step-counter {
-                background: #000;
-                color: #fff;
-                width: 32px;
-                height: 32px;
-                border-radius: 50%;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 14px;
-                font-weight: 600;
-                margin-right: 12px;
-                flex-shrink: 0;
+            .step {
+                padding: 24px 0;
+                border-bottom: 1px solid var(--border);
+            }
+
+            .step:last-child {
+                border-bottom: none;
             }
 
             .step-header {
                 display: flex;
                 align-items: center;
-                margin-bottom: 16px;
+                gap: 12px;
+                margin-bottom: 12px;
+            }
+
+            .step-number {
+                width: 28px;
+                height: 28px;
+                background: var(--text);
+                color: var(--bg);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+                font-weight: 600;
+                flex-shrink: 0;
             }
 
             .step-title {
-                font-size: 18px;
+                font-size: 16px;
                 font-weight: 600;
-                color: #000;
                 margin: 0;
             }
 
-            .quick-link {
-                display: inline-flex;
-                align-items: center;
-                gap: 6px;
-                background: #f5f5f5;
-                color: #000;
-                padding: 8px 16px;
-                border-radius: 6px;
-                text-decoration: none;
-                font-size: 14px;
-                font-weight: 500;
-                margin-top: 12px;
-                transition: all 0.2s ease;
-                border: 1px solid #e5e5e5;
+            .step-content {
+                font-size: 15px;
+                color: var(--text-secondary);
+                line-height: 1.6;
+                margin-left: 40px;
             }
 
-            .quick-link:hover {
-                background: #e5e5e5;
-                color: #000;
+            .step-content a.link {
+                display: inline-flex;
+                align-items: center;
+                gap: 4px;
+                color: var(--text);
+                text-decoration: underline;
+                text-underline-offset: 2px;
+                margin-top: 8px;
             }
 
             .step-image {
-                max-width: 100%;
-                height: auto;
-                border: 1px solid #e5e5e5;
+                margin-top: 16px;
+                border: 1px solid var(--border);
                 border-radius: 8px;
-                margin: 16px 0;
             }
         </style>
     </head>
     <body>
-        <!-- Navigation -->
-        <nav class="navbar" id="navbar">
+        <nav class="navbar">
             <div class="nav-container">
-                <img src="/assets/new/new-logo.svg" alt="cheating daddy" class="logo" />
+                <a href="/" class="nav-brand">Cheating Daddy</a>
                 <div class="nav-links">
-                    <a href="/">Home</a>
+                    <a href="/help" class="active">Help</a>
                     <a href="/download">Download</a>
-                    <a href="/help">Help</a>
-                    <a href="https://github.com/sohzm/cheating-daddy" target="_blank">Source</a>
+                    <a href="https://github.com/sohzm/cheating-daddy" target="_blank">GitHub</a>
                 </div>
             </div>
         </nav>
 
-        <!-- Main Content -->
         <div class="main-content">
             <div class="container">
                 <div class="page-header">
-                    <h1 class="page-title">API Key Guide</h1>
-                    <p class="page-subtitle">
-                        Follow these steps to get your free Google AI Studio API key.<br />It's quick and easy, and completely free to use.
-                    </p>
+                    <div class="breadcrumb">
+                        <a href="/help">Help</a>
+                        <span>/</span>
+                        <span>API Key Setup</span>
+                    </div>
+                    <h1 class="page-title">API Key Setup</h1>
+                    <p class="page-subtitle">Get your free Google AI Studio API key.</p>
                 </div>
 
+                <hr class="divider" />
+
                 <div class="content-section">
-                    <div class="section-content">
-                        <div class="card mb-24">
-                            <div class="step-header">
-                                <div class="step-counter">1</div>
-                                <h3 class="step-title">Log in to Google</h3>
-                            </div>
-                            <div class="card-content">
-                                First, you need to log in to your Google account. If you don't have one, you'll need to create one first. <br />
-                                <a href="https://accounts.google.com" target="_blank" class="quick-link"> Go to Google Accounts → </a>
+                    <div class="step">
+                        <div class="step-header">
+                            <div class="step-number">1</div>
+                            <h3 class="step-title">Log in to Google</h3>
+                        </div>
+                        <div class="step-content">
+                            Log in to your Google account. If you don't have one, create one first.
+                            <br />
+                            <a href="https://accounts.google.com" target="_blank" class="link">Go to Google Accounts →</a>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-header">
+                            <div class="step-number">2</div>
+                            <h3 class="step-title">Go to Google AI Studio</h3>
+                        </div>
+                        <div class="step-content">
+                            Navigate to Google AI Studio and accept the terms of service.
+                            <br />
+                            <a href="https://aistudio.google.com/app/apikey" target="_blank" class="link">Open Google AI Studio →</a>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-header">
+                            <div class="step-number">3</div>
+                            <h3 class="step-title">Create API Key</h3>
+                        </div>
+                        <div class="step-content">
+                            Click the button shown below to create your API key.
+                            <div class="image-container">
+                                <img src="/assets/help/api-key/api-key-button.png" alt="API Key Button" class="step-image" />
                             </div>
                         </div>
+                    </div>
 
-                        <div class="card mb-24">
-                            <div class="step-header">
-                                <div class="step-counter">2</div>
-                                <h3 class="step-title">Go to Google AI Studio</h3>
-                            </div>
-                            <div class="card-content">
-                                Navigate to Google AI Studio and accept the terms of service. Make sure to select the first checkbox and click "Accept
-                                terms". <br />
-                                <a href="https://aistudio.google.com/app/apikey" target="_blank" class="quick-link"> Open Google AI Studio → </a>
+                    <div class="step">
+                        <div class="step-header">
+                            <div class="step-number">4</div>
+                            <h3 class="step-title">Copy Your API Key</h3>
+                        </div>
+                        <div class="step-content">
+                            Click the copy button to copy your API key to clipboard.
+                            <div class="image-container">
+                                <img src="/assets/help/api-key/copy-button.png" alt="Copy Button" class="step-image" />
                             </div>
                         </div>
+                    </div>
 
-                        <div class="card mb-24">
-                            <div class="step-header">
-                                <div class="step-counter">3</div>
-                                <h3 class="step-title">Create API Key</h3>
-                            </div>
-                            <div class="card-content">
-                                Once you're in Google AI Studio, look for the button shown in the screenshot below and click on it to create your API
-                                key.
-                                <div class="image-container">
-                                    <img src="/assets/help/api-key/api-key-button.png" alt="API Key Button Screenshot" class="step-image" />
-                                </div>
-                            </div>
+                    <div class="step">
+                        <div class="step-header">
+                            <div class="step-number">5</div>
+                            <h3 class="step-title">Use in Cheating Daddy</h3>
                         </div>
-
-                        <div class="card mb-24">
-                            <div class="step-header">
-                                <div class="step-counter">4</div>
-                                <h3 class="step-title">Copy Your API Key</h3>
-                            </div>
-                            <div class="card-content">
-                                After creating the API key, you'll see a copy button as shown in the screenshot below. Click on it to copy your API
-                                key to the clipboard.
-                                <div class="image-container">
-                                    <img src="/assets/help/api-key/copy-button.png" alt="Copy Button Screenshot" class="step-image" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="step-header">
-                                <div class="step-counter">5</div>
-                                <h3 class="step-title">Use in Cheating Daddy</h3>
-                            </div>
-                            <div class="card-content">
-                                Now you can paste this API key into the Cheating Daddy app and start using it. Make sure to keep your API key
-                                <span class="highlight">private</span> and don't share it with anyone.
-                            </div>
+                        <div class="step-content">
+                            Paste the API key into the app. Keep your key <span class="highlight">private</span>.
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Footer -->
         <footer class="footer">
             <div class="footer-container">
                 <a href="https://github.com/sohzm/cheating-daddy" target="_blank" class="github-star">
                     <img src="/assets/social/github.svg" alt="GitHub" />
-                    <span>Star us on GitHub</span>
+                    <span>Star on GitHub</span>
                 </a>
 
                 <div class="social-links">
@@ -204,27 +192,8 @@
                     </a>
                 </div>
 
-                <p class="footer-text">Made by <a href="https://soham.sh/" target="_blank">soham</a></p>
+                <p class="footer-text">Made by <a href="https://soham.sh/" target="_blank">Soham</a></p>
             </div>
         </footer>
-
-        <script>
-            // Navbar scroll effect
-            function handleNavbarScroll() {
-                const navbar = document.getElementById('navbar');
-                const scrolled = window.scrollY > 50;
-
-                if (scrolled) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
-                }
-            }
-
-            // Initialize
-            document.addEventListener('DOMContentLoaded', function () {
-                window.addEventListener('scroll', handleNavbarScroll);
-            });
-        </script>
     </body>
 </html>

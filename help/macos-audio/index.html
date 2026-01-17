@@ -1,172 +1,163 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>cheating daddy - macos audio guide</title>
+        <title>macOS Audio Permissions - Cheating Daddy</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <meta name="description" content="enable audio recording permissions for cheating daddy on macos" />
+        <meta name="description" content="Enable audio recording permissions for Cheating Daddy on macOS" />
         <meta name="author" content="soham.sh" />
-        <meta name="keywords" content="cheating, daddy, app, macos, audio, permissions, recording, tutorial" />
-        <meta property="og:title" content="cheating daddy - macos audio guide" />
+        <meta property="og:title" content="macOS Audio Permissions - Cheating Daddy" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://cheatingdaddy.com/help/macos-audio" />
         <meta property="og:image" content="https://cheatingdaddy.com/assets/bg.png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="cheating daddy logo" />
-        <meta property="og:description" content="step-by-step guide to enable audio recording on macos" />
-        <meta property="og:site_name" content="cheating daddy" />
-        <meta property="og:locale" content="en_US" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="cheating daddy - macos audio guide" />
-        <meta name="twitter:description" content="step-by-step guide to enable audio recording on macos" />
-        <meta name="twitter:image" content="https://cheatingdaddy.com/assets/bg.png" />
-        <meta name="twitter:site" content="@cheating_daddy" />
+        <meta property="og:description" content="Step-by-step guide to enable audio recording on macOS" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="/common.css" />
 
         <style>
-            .step-counter {
-                background: #000;
-                color: #fff;
-                width: 32px;
-                height: 32px;
-                border-radius: 50%;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 14px;
-                font-weight: 600;
-                margin-right: 12px;
-                flex-shrink: 0;
+            .step {
+                padding: 24px 0;
+                border-bottom: 1px solid var(--border);
+            }
+
+            .step:last-child {
+                border-bottom: none;
             }
 
             .step-header {
                 display: flex;
                 align-items: center;
-                margin-bottom: 16px;
+                gap: 12px;
+                margin-bottom: 12px;
+            }
+
+            .step-number {
+                width: 28px;
+                height: 28px;
+                background: var(--text);
+                color: var(--bg);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+                font-weight: 600;
+                flex-shrink: 0;
             }
 
             .step-title {
-                font-size: 18px;
+                font-size: 16px;
                 font-weight: 600;
-                color: #000;
                 margin: 0;
             }
 
+            .step-content {
+                font-size: 15px;
+                color: var(--text-secondary);
+                line-height: 1.6;
+                margin-left: 40px;
+            }
+
             .step-image {
-                max-width: 100%;
-                height: auto;
-                border: 1px solid #e5e5e5;
+                margin-top: 16px;
+                border: 1px solid var(--border);
                 border-radius: 8px;
-                margin: 16px 0;
             }
         </style>
     </head>
     <body>
-        <!-- Navigation -->
-        <nav class="navbar" id="navbar">
+        <nav class="navbar">
             <div class="nav-container">
-                <img src="/assets/new/new-logo.svg" alt="cheating daddy" class="logo" />
+                <a href="/" class="nav-brand">Cheating Daddy</a>
                 <div class="nav-links">
-                    <a href="/">Home</a>
+                    <a href="/help" class="active">Help</a>
                     <a href="/download">Download</a>
-                    <a href="/help">Help</a>
-                    <a href="https://github.com/sohzm/cheating-daddy" target="_blank">Source</a>
+                    <a href="https://github.com/sohzm/cheating-daddy" target="_blank">GitHub</a>
                 </div>
             </div>
         </nav>
 
-        <!-- Main Content -->
         <div class="main-content">
             <div class="container">
                 <div class="page-header">
-                    <h1 class="page-title">macOS Audio Guide</h1>
-                    <p class="page-subtitle">
-                        Follow these steps to enable audio recording permissions for Cheating Daddy on macOS.<br />This allows the app to capture
-                        system audio for processing.
-                    </p>
+                    <div class="breadcrumb">
+                        <a href="/help">Help</a>
+                        <span>/</span>
+                        <span>macOS Audio</span>
+                    </div>
+                    <h1 class="page-title">macOS Audio Permissions</h1>
+                    <p class="page-subtitle">Enable audio recording for Cheating Daddy.</p>
                 </div>
 
+                <hr class="divider" />
+
                 <div class="content-section">
-                    <div class="section-content">
-                        <div class="card mb-24">
-                            <div class="step-header">
-                                <div class="step-counter">1</div>
-                                <h3 class="step-title">Open System Settings</h3>
-                            </div>
-                            <div class="card-content">
-                                First, open your Mac's System Settings and navigate to the "Privacy and Security" section as shown in the screenshot
-                                below.
-                                <div class="image-container">
-                                    <img
-                                        src="/assets/help/macos-audio/privacy-and-sec.png"
-                                        alt="Privacy and Security Settings Screenshot"
-                                        class="step-image"
-                                    />
-                                </div>
+                    <div class="step">
+                        <div class="step-header">
+                            <div class="step-number">1</div>
+                            <h3 class="step-title">Open System Settings</h3>
+                        </div>
+                        <div class="step-content">
+                            Open System Settings and go to Privacy & Security.
+                            <div class="image-container">
+                                <img src="/assets/help/macos-audio/privacy-and-sec.png" alt="Privacy and Security" class="step-image" />
                             </div>
                         </div>
+                    </div>
 
-                        <div class="card mb-24">
-                            <div class="step-header">
-                                <div class="step-counter">2</div>
-                                <h3 class="step-title">Go to Screen and System Audio Recording</h3>
-                            </div>
-                            <div class="card-content">
-                                In the Privacy and Security settings, find and click on "Screen and System Audio Recording" option.
-                                <div class="image-container">
-                                    <img
-                                        src="/assets/help/macos-audio/screenrec.png"
-                                        alt="Screen and System Audio Recording Screenshot"
-                                        class="step-image"
-                                    />
-                                </div>
+                    <div class="step">
+                        <div class="step-header">
+                            <div class="step-number">2</div>
+                            <h3 class="step-title">Go to Screen and System Audio Recording</h3>
+                        </div>
+                        <div class="step-content">
+                            Find and click on "Screen and System Audio Recording".
+                            <div class="image-container">
+                                <img src="/assets/help/macos-audio/screenrec.png" alt="Screen Recording" class="step-image" />
                             </div>
                         </div>
+                    </div>
 
-                        <div class="card mb-24">
-                            <div class="step-header">
-                                <div class="step-counter">3</div>
-                                <h3 class="step-title">Add Cheating Daddy</h3>
-                            </div>
-                            <div class="card-content">
-                                If Cheating Daddy is not already in the list, click the "+" button to add it to the allowed applications.
-                                <div class="image-container">
-                                    <img src="/assets/help/macos-audio/add-app.png" alt="Add Application Screenshot" class="step-image" />
-                                </div>
+                    <div class="step">
+                        <div class="step-header">
+                            <div class="step-number">3</div>
+                            <h3 class="step-title">Add Cheating Daddy</h3>
+                        </div>
+                        <div class="step-content">
+                            Click the "+" button to add the app.
+                            <div class="image-container">
+                                <img src="/assets/help/macos-audio/add-app.png" alt="Add Application" class="step-image" />
                             </div>
                         </div>
+                    </div>
 
-                        <div class="card mb-24">
-                            <div class="step-header">
-                                <div class="step-counter">4</div>
-                                <h3 class="step-title">Select the App</h3>
-                            </div>
-                            <div class="card-content">
-                                Browse to find the Cheating Daddy application, select it, and click "Open" to add it to the permissions list.
-                                <div class="image-container">
-                                    <img src="/assets/help/macos-audio/select-app.png" alt="Select Application Screenshot" class="step-image" />
-                                </div>
+                    <div class="step">
+                        <div class="step-header">
+                            <div class="step-number">4</div>
+                            <h3 class="step-title">Select the App</h3>
+                        </div>
+                        <div class="step-content">
+                            Browse to Cheating Daddy and click Open.
+                            <div class="image-container">
+                                <img src="/assets/help/macos-audio/select-app.png" alt="Select Application" class="step-image" />
                             </div>
                         </div>
+                    </div>
 
-                        <div class="card">
-                            <div class="step-header">
-                                <div class="step-counter">5</div>
-                                <h3 class="step-title">Enable Permissions</h3>
-                            </div>
-                            <div class="card-content">
-                                Make sure the toggle switch next to Cheating Daddy is <span class="highlight">enabled</span>. Your settings should
-                                look like the screenshot below when configured correctly.
-                                <div class="image-container">
-                                    <img src="/assets/help/macos-audio/final-look.png" alt="Final Configuration Screenshot" class="step-image" />
-                                </div>
+                    <div class="step">
+                        <div class="step-header">
+                            <div class="step-number">5</div>
+                            <h3 class="step-title">Enable Permissions</h3>
+                        </div>
+                        <div class="step-content">
+                            Make sure the toggle is <span class="highlight">enabled</span>.
+                            <div class="image-container">
+                                <img src="/assets/help/macos-audio/final-look.png" alt="Final Configuration" class="step-image" />
                             </div>
                         </div>
                     </div>
@@ -174,12 +165,11 @@
             </div>
         </div>
 
-        <!-- Footer -->
         <footer class="footer">
             <div class="footer-container">
                 <a href="https://github.com/sohzm/cheating-daddy" target="_blank" class="github-star">
                     <img src="/assets/social/github.svg" alt="GitHub" />
-                    <span>Star us on GitHub</span>
+                    <span>Star on GitHub</span>
                 </a>
 
                 <div class="social-links">
@@ -197,27 +187,8 @@
                     </a>
                 </div>
 
-                <p class="footer-text">Made by <a href="https://soham.sh/" target="_blank">soham</a></p>
+                <p class="footer-text">Made by <a href="https://soham.sh/" target="_blank">Soham</a></p>
             </div>
         </footer>
-
-        <script>
-            // Navbar scroll effect
-            function handleNavbarScroll() {
-                const navbar = document.getElementById('navbar');
-                const scrolled = window.scrollY > 50;
-
-                if (scrolled) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
-                }
-            }
-
-            // Initialize
-            document.addEventListener('DOMContentLoaded', function () {
-                window.addEventListener('scroll', handleNavbarScroll);
-            });
-        </script>
     </body>
 </html>

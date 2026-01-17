@@ -1,82 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>cheating daddy - macos install warning guide</title>
+        <title>macOS Installation Warning - Cheating Daddy</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <meta name="description" content="fix macos install warning for cheating daddy app" />
+        <meta name="description" content="Fix macOS install warning for Cheating Daddy" />
         <meta name="author" content="soham.sh" />
-        <meta name="keywords" content="cheating, daddy, app, macos, install, warning, tutorial, security" />
-        <meta property="og:title" content="cheating daddy - macos install warning guide" />
+        <meta property="og:title" content="macOS Installation Warning - Cheating Daddy" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://cheatingdaddy.com/help/macos-install-warning" />
         <meta property="og:image" content="https://cheatingdaddy.com/assets/bg.png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="cheating daddy logo" />
-        <meta property="og:description" content="step-by-step guide to fix macos install warnings" />
-        <meta property="og:site_name" content="cheating daddy" />
-        <meta property="og:locale" content="en_US" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="cheating daddy - macos install warning guide" />
-        <meta name="twitter:description" content="step-by-step guide to fix macos install warnings" />
-        <meta name="twitter:image" content="https://cheatingdaddy.com/assets/bg.png" />
-        <meta name="twitter:site" content="@cheating_daddy" />
+        <meta property="og:description" content="Fix macOS security warning when installing" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="/common.css" />
     </head>
     <body>
-        <!-- Navigation -->
-        <nav class="navbar" id="navbar">
+        <nav class="navbar">
             <div class="nav-container">
-                <img src="/assets/new/new-logo.svg" alt="cheating daddy" class="logo" />
+                <a href="/" class="nav-brand">Cheating Daddy</a>
                 <div class="nav-links">
-                    <a href="/">Home</a>
+                    <a href="/help" class="active">Help</a>
                     <a href="/download">Download</a>
-                    <a href="/help">Help</a>
-                    <a href="https://github.com/sohzm/cheating-daddy" target="_blank">Source</a>
+                    <a href="https://github.com/sohzm/cheating-daddy" target="_blank">GitHub</a>
                 </div>
             </div>
         </nav>
 
-        <!-- Main Content -->
         <div class="main-content">
             <div class="container">
                 <div class="page-header">
-                    <h1 class="page-title">macOS Install Warning</h1>
-                    <p class="page-subtitle">Follow these steps to fix the macOS security warning when installing Cheating Daddy.</p>
+                    <div class="breadcrumb">
+                        <a href="/help">Help</a>
+                        <span>/</span>
+                        <span>Install Warning</span>
+                    </div>
+                    <h1 class="page-title">macOS Installation Warning</h1>
+                    <p class="page-subtitle">Fix the security warning when installing on macOS.</p>
                 </div>
 
+                <hr class="divider" />
+
                 <div class="content-section">
-                    <div class="section-content">
-                        <div class="card">
-                            <div class="card-content">
-                                <p>Visit this guide for step-by-step instructions:</p>
-                                <a
-                                    href="https://www.macobserver.com/tips/how-to/fixing-macos-cannot-verify-app-free-malware/"
-                                    target="_blank"
-                                    class="btn btn-primary"
-                                >
-                                    View MacObserver Guide
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    <p style="margin-bottom: 24px;">
+                        macOS shows a security warning because the app isn't code signed. Follow this external guide to bypass the warning.
+                    </p>
+                    <a href="https://www.macobserver.com/tips/how-to/fixing-macos-cannot-verify-app-free-malware/" target="_blank" class="btn btn-primary">
+                        View Guide →
+                    </a>
                 </div>
             </div>
         </div>
 
-        <!-- Footer -->
         <footer class="footer">
             <div class="footer-container">
                 <a href="https://github.com/sohzm/cheating-daddy" target="_blank" class="github-star">
                     <img src="/assets/social/github.svg" alt="GitHub" />
-                    <span>Star us on GitHub</span>
+                    <span>Star on GitHub</span>
                 </a>
 
                 <div class="social-links">
@@ -94,27 +78,8 @@
                     </a>
                 </div>
 
-                <p class="footer-text">Made by <a href="https://soham.sh/" target="_blank">soham</a></p>
+                <p class="footer-text">Made by <a href="https://soham.sh/" target="_blank">Soham</a></p>
             </div>
         </footer>
-
-        <script>
-            // Navbar scroll effect
-            function handleNavbarScroll() {
-                const navbar = document.getElementById('navbar');
-                const scrolled = window.scrollY > 50;
-
-                if (scrolled) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
-                }
-            }
-
-            // Initialize
-            document.addEventListener('DOMContentLoaded', function () {
-                window.addEventListener('scroll', handleNavbarScroll);
-            });
-        </script>
     </body>
 </html>

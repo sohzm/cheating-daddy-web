@@ -1,142 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>cheating daddy - help center</title>
+        <title>Help - Cheating Daddy</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <meta name="description" content="help center for cheating daddy - find guides and tutorials" />
+        <meta name="description" content="Help center for Cheating Daddy - find guides and tutorials" />
         <meta name="author" content="soham.sh" />
-        <meta name="keywords" content="cheating, daddy, app, help, guides, tutorials, support" />
-        <meta property="og:title" content="cheating daddy - help center" />
+        <meta property="og:title" content="Help - Cheating Daddy" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://cheatingdaddy.com/help" />
         <meta property="og:image" content="https://cheatingdaddy.com/assets/bg.png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="cheating daddy logo" />
-        <meta property="og:description" content="help center with guides and tutorials for cheating daddy" />
-        <meta property="og:site_name" content="cheating daddy" />
-        <meta property="og:locale" content="en_US" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="cheating daddy - help center" />
-        <meta name="twitter:description" content="help center with guides and tutorials for cheating daddy" />
-        <meta name="twitter:image" content="https://cheatingdaddy.com/assets/bg.png" />
-        <meta name="twitter:site" content="@cheating_daddy" />
+        <meta property="og:description" content="Help center with guides and tutorials for Cheating Daddy" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="/common.css" />
 
         <style>
-            .help-list {
-                list-style: none;
-                padding: 0;
-                margin-top: 40px;
+            .help-item {
+                padding: 20px 0;
+                border-bottom: 1px solid var(--border);
             }
 
-            .help-list li {
-                padding: 16px 0;
-                border-bottom: 1px solid #e5e5e5;
-            }
-
-            .help-list li:last-child {
+            .help-item:last-child {
                 border-bottom: none;
             }
 
-            .help-list a {
-                text-decoration: none;
-                color: #000;
-                font-weight: 500;
+            .help-item a {
                 font-size: 16px;
+                font-weight: 500;
+                color: var(--text);
             }
 
-            .help-list a:hover {
-                color: #666;
+            .help-item a:hover {
+                color: var(--text-secondary);
             }
 
-            .help-description {
-                color: #666;
-                font-size: 14px;
-                margin-top: 4px;
+            .help-item p {
+                font-size: 15px;
+                color: var(--text-secondary);
+                margin: 4px 0 0 0;
+            }
+
+            .support-card {
+                margin-top: 48px;
+                padding-top: 48px;
+                border-top: 1px solid var(--border);
+            }
+
+            .support-card h3 {
+                font-size: 17px;
+                margin-bottom: 8px;
+            }
+
+            .support-card p {
+                margin-bottom: 24px;
+            }
+
+            .support-actions {
+                display: flex;
+                gap: 12px;
+                flex-wrap: wrap;
             }
         </style>
     </head>
     <body>
-        <!-- Navigation -->
-        <nav class="navbar" id="navbar">
+        <nav class="navbar">
             <div class="nav-container">
-                <a href="/"><img src="/assets/new/new-logo.svg" alt="cheating daddy" class="logo" /></a>
-
+                <a href="/" class="nav-brand">Cheating Daddy</a>
                 <div class="nav-links">
-                    <a href="/help">Help</a>
-                    <!-- <a href="/tutorial">Tutorial</a> -->
+                    <a href="/help" class="active">Help</a>
                     <a href="/download">Download</a>
-                    <a href="https://github.com/sohzm/cheating-daddy" target="_blank">Source</a>
+                    <a href="https://github.com/sohzm/cheating-daddy" target="_blank">GitHub</a>
                 </div>
             </div>
         </nav>
 
-        <!-- Main Content -->
         <div class="main-content">
             <div class="container">
                 <div class="page-header">
                     <h1 class="page-title">Help Center</h1>
-                    <p class="page-subtitle">
-                        Find guides, tutorials, and solutions to common issues.<br />Get the most out of Cheating Daddy with our step-by-step guides.
-                    </p>
+                    <p class="page-subtitle">Guides and solutions to common issues.</p>
                 </div>
 
+                <hr class="divider" />
+
                 <div class="content-section">
-                    <div class="section-content">
-                        <ul class="help-list">
-                            <li>
-                                <a href="/help/api-key/">API Key Setup</a>
-                                <div class="help-description">Learn how to get and configure your Google Gemini API key</div>
-                            </li>
-                            <li>
-                                <a href="/help/macos-audio/">macOS Audio Permissions</a>
-                                <div class="help-description">Enable audio recording permissions on macOS</div>
-                            </li>
-                            <li>
-                                <a href="/help/macos-install-warning/">macOS Installation Warning</a>
-                                <div class="help-description">Resolve security warnings when installing on macOS</div>
-                            </li>
-                            <li>
-                                <a href="/help/clear-storage/">Clear Storage</a>
-                                <div class="help-description">Reset your app data and settings</div>
-                            </li>
-                        </ul>
+                    <div class="section-header">
+                        <h2>Guides</h2>
                     </div>
-                </div>
 
-                <div class="content-section">
-                    <div class="section-content">
-                        <div class="card text-center">
-                            <div class="card-title">Need More Help?</div>
-                            <div class="card-content">
-                                <p style="margin-bottom: 20px">Can't find what you're looking for? Join our community for support and updates.</p>
-                                <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap">
-                                    <a href="https://discord.gg/GCBdubnXfJ" target="_blank" class="btn btn-primary">Join Discord</a>
-                                    <a href="https://github.com/sohzm/cheating-daddy/issues" target="_blank" class="btn btn-secondary"
-                                        >Report Issue</a
-                                    >
-                                </div>
-                            </div>
+                    <div class="help-item">
+                        <a href="/help/api-key/">API Key Setup</a>
+                        <p>Get and configure your Google Gemini API key</p>
+                    </div>
+                    <div class="help-item">
+                        <a href="/help/macos-audio/">macOS Audio Permissions</a>
+                        <p>Enable audio recording permissions on macOS</p>
+                    </div>
+                    <div class="help-item">
+                        <a href="/help/macos-install-warning/">macOS Installation Warning</a>
+                        <p>Resolve security warnings when installing on macOS</p>
+                    </div>
+                    <div class="help-item">
+                        <a href="/help/clear-storage/">Clear Storage</a>
+                        <p>Reset your app data and settings</p>
+                    </div>
+
+                    <div class="support-card">
+                        <h3>Need more help?</h3>
+                        <p>Can't find what you're looking for? Join our community for support.</p>
+                        <div class="support-actions">
+                            <a href="https://discord.gg/GCBdubnXfJ" target="_blank" class="btn btn-primary">Join Discord</a>
+                            <a href="https://github.com/sohzm/cheating-daddy/issues" target="_blank" class="btn btn-secondary">Report Issue</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Footer -->
         <footer class="footer">
             <div class="footer-container">
                 <a href="https://github.com/sohzm/cheating-daddy" target="_blank" class="github-star">
                     <img src="/assets/social/github.svg" alt="GitHub" />
-                    <span>Star us on GitHub</span>
+                    <span>Star on GitHub</span>
                 </a>
 
                 <div class="social-links">
@@ -154,27 +144,8 @@
                     </a>
                 </div>
 
-                <p class="footer-text">Made by <a href="https://soham.sh/" target="_blank">soham</a></p>
+                <p class="footer-text">Made by <a href="https://soham.sh/" target="_blank">Soham</a></p>
             </div>
         </footer>
-
-        <script>
-            // Navbar scroll effect
-            function handleNavbarScroll() {
-                const navbar = document.getElementById('navbar');
-                const scrolled = window.scrollY > 50;
-
-                if (scrolled) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
-                }
-            }
-
-            // Initialize
-            document.addEventListener('DOMContentLoaded', function () {
-                window.addEventListener('scroll', handleNavbarScroll);
-            });
-        </script>
     </body>
 </html>
