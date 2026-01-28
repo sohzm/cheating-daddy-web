@@ -18,7 +18,7 @@ The type scale is restrained: essentially three sizes for body content, with the
 
 ## Rhythm Through Lines
 
-Strategic horizontal rules create breathing room between sections. They're not decorative—they're functional. They tell the reader "this thought is complete, here comes the next one." The vertical accent bars on section headers add an editorial quality, like a pull quote marker in a magazine. These elements create rhythm without adding visual weight.
+Strategic horizontal rules create breathing room between sections. They're not decorative—they're functional. They tell the reader "this thought is complete, here comes the next one." These elements create rhythm without adding visual weight.
 
 ## The Role of White Space
 
@@ -26,7 +26,7 @@ White space is used aggressively. Sections have generous padding. The content ar
 
 ## Color Restraint
 
-The palette is essentially black, white, and gray. The single accent color (blue) appears only on interactive elements—links and CTAs. This restraint serves two purposes: it keeps focus on the content, and it makes the interactive elements unmistakably clickable. There's no decoration competing with function.
+The palette is essentially black, white, and gray. The single accent color (blue) appears only on interactive elements—links and CTAs. Links are styled with blue text and an underline to make them unmistakably clickable. This restraint serves two purposes: it keeps focus on the content, and it makes the interactive elements obvious. There's no decoration competing with function.
 
 ## Trust Through Directness
 
